@@ -154,6 +154,20 @@ export LANGSMITH_API_KEY="..."
 
 Then all agent invocations will be logged to [LangSmith](https://smith.langchain.com) for inspection and debugging.
 
+## Development
+
+Install dev dependencies:
+```bash
+uv sync --group dev
+```
+
+Run linting and formatting with [poethepoet](https://poethepoet.natn.io/):
+```bash
+uv run poe lint      # Run ruff check
+uv run poe format    # Run ruff format
+uv run poe check     # Run both
+```
+
 ## References
 
 - [LangChain Skills Pattern Tutorial](https://docs.langchain.com/docs/langchain_community_docs/tutorials)

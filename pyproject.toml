@@ -16,5 +16,11 @@ build-backend = "setuptools.build_meta"
 
 [dependency-groups]
 dev = [
+    "poethepoet>=0.39.0",
     "ruff>=0.14.10",
 ]
+
+[tool.poe.tasks]
+lint = "ruff check ."
+format = "ruff format ."
+check = ["lint", "format"]
