@@ -1,0 +1,20 @@
+[project]
+name = "skills-agent"
+version = "0.1.0"
+description = "SQL assistant with on-demand skills (progressive disclosure)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain[openai]>=1.2.0",
+    "langchain-core>=1.2.4",
+    "python-dotenv>=1.2.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.10",
+]
